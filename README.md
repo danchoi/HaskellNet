@@ -17,3 +17,13 @@ debugger works well:
 
   :set -fbreak-on-exception
   :trace main
+
+## Note on Fork
+
+I made changes to make cabal install on this work on ghc 7.4.1 and
+later. 
+
+* removed dependency on haskell-98
+* changed import List and Char to import Data.List, Data.Char
+* fix a missing Show a type class constraint
+
